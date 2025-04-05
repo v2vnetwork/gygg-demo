@@ -5,7 +5,7 @@ import { TaskCard } from "./TaskCard";
 const tasks = [
   { 
     image:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/2e686ed28611191afa737366e4435a6dcccf28cd",
+      "/assets/girl.png",
     author: "Robert.T",
     title: "Looking for a dog sitter in Thornhill area",
     rate: "$16-22/hr",
