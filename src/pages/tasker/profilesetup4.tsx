@@ -24,10 +24,11 @@ const ProfileSetup4 = () => {
     }
   };
 
-  // Generate the task rate options
-  const rateOptions = [];
-  for (let rate = 20; rate <= 100; rate += 5) {
-    rateOptions.push(rate);
+  // Generate the task rate range options
+  const rateRanges = [];
+  for (let start = 20; start < 100; start += 5) {
+    const end = start + 5;
+    rateRanges.push(`${start}-${end}`);
   }
 
   return (
@@ -50,9 +51,9 @@ const ProfileSetup4 = () => {
               onChange={(e) => setTaskRate(e.target.value)}
             >
               <option value="">Select your rate</option>
-              {rateOptions.map((rate) => (
-                <option key={rate} value={rate}>
-                  ${rate}
+              {rateRanges.map((range) => (
+                <option key={range} value={range}>
+                  ${range}
                 </option>
               ))}
             </select>
@@ -72,4 +73,3 @@ const ProfileSetup4 = () => {
 };
 
 export default ProfileSetup4;
-    
