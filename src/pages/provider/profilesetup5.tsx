@@ -31,7 +31,7 @@ export default function ProfileSetup5() {
       />
       <main className={styles.mainContainer}>
         <header className={styles.header}>
-          <img
+          <Image
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed2ffb06294b1842ef39768c2189fe8393438629"
             alt="GYGG Logo"
             className={styles.logo}

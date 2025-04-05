@@ -72,7 +72,7 @@ const ProfileSetup5 = () => {
               onDragOver={handleDragOver}
             >
               {profileImage ? (
-                <img
+                <Image
                   src={URL.createObjectURL(profileImage)}
                   alt="Profile preview"
                   className={styles.previewImage}

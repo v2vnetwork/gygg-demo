@@ -13,7 +13,7 @@
     border-radius: 15px;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     width: 280px;
     max-width: 100%;
     padding: 9px 12px;
@@ -54,7 +54,7 @@
   
   .messagePreview {
     flex-direction: column;
-    align-self: start;
+    align-self: flex-start;
     flex-grow: 1;
   }
   
