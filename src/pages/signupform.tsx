@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/router"; 
 import styles from "./signupform.module.css";
 import InputField from "../components/SignupForm/InputField";
+import Image from 'next/image';
 
 const SignUpForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const SignUpForm: React.FC = () => {
 
   return (
     <main className={styles.container}>
-      <img src="/gygg_logo.svg" alt="GYGG Logo" className={styles.logo} />
+      <Image src="/gygg_logo.svg" alt="GYGG Logo" className={styles.logo} />
 
       <section className={styles.formContainer}>
         <h1 className={styles.title}>Sign up</h1>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./PostCard.module.css";
+import Image from 'next/image';
 
 interface PostCardProps {
   profileImage: string;
@@ -21,7 +22,7 @@ const PostCard: React.FC<PostCardProps> = ({
   return (
     <article className={styles.postCard}>
       <div className={styles.postHeader}>
-        <img
+        <Image
           src={profileImage}
           alt={`${name}'s profile`}
           className={styles.postProfileImg}
@@ -31,7 +32,7 @@ const PostCard: React.FC<PostCardProps> = ({
           <time className={styles.postDate}>{date}</time>
         </div>
         <button className={styles.moreButton}>
-        <img 
+        <Image 
           src="/more.svg" 
           alt="More" 
           className={styles.moreIcon}
@@ -41,7 +42,7 @@ const PostCard: React.FC<PostCardProps> = ({
       <p className={styles.postContent}>{content}</p>
       <div className={styles.postActions}>
         <div className={styles.actionItem}>
-        <img 
+        <Image 
           src="/heart.svg" 
           alt="Heart" 
           className={styles.heartIcon}
@@ -49,7 +50,7 @@ const PostCard: React.FC<PostCardProps> = ({
           <span>{likes}</span>
         </div>
         <div className={styles.actionItem}>
-        <img 
+        <Image 
           src="/comment.svg" 
           alt="Comment" 
           className={styles.CommentIcon}
@@ -57,7 +58,7 @@ const PostCard: React.FC<PostCardProps> = ({
           <span>{comments}</span>
         </div>
         <button className={styles.bookmarkButton}>
-        <img 
+        <Image 
           src="/bookmark.svg" 
           alt="Bookmark" 
           className={styles.bookmarkIcon}

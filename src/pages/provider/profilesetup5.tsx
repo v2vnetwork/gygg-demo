@@ -7,6 +7,7 @@ import { NavigationHeader } from "../../components/Provider/ProfileSetup5/Naviga
 import { TimelineSelector } from "../../components/Provider/ProfileSetup5/TimelineSelector";
 import { TitleInput } from "../../components/Provider/ProfileSetup5/TitleInput";
 import { CategorySelector } from "../../components/Provider/ProfileSetup5/CategorySelector";
+import Image from 'next/image';
 
 export default function ProfileSetup5() {
   const [formData, setFormData] = useState({

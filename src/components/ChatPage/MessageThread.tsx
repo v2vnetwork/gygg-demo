@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./MessageThread.module.css";
+import Image from 'next/image';
 
 const MessageThread: React.FC = () => {
   return (
     <div className={styles.thread}>
       <article className={styles.message}>
-      <img
+      <Image
           src="/assets/image-555.png"
           alt="Anil K"
           className={styles.avatar}
@@ -31,7 +32,7 @@ const MessageThread: React.FC = () => {
       </div>
 
       <article className={styles.message}>
-        <img
+        <Image
           src="/assets/image-555.png"
           alt="Anil K"
           className={styles.avatar}
@@ -50,7 +51,7 @@ const MessageThread: React.FC = () => {
       </div>
 
       <article className={styles.message}>
-      <img
+      <Image
           src="/assets/image-555.png"
           alt="Anil K"
           className={styles.avatar}

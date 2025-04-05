@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./ProfileSidebar.module.css";
 import Button from "./Button";
+import Image from 'next/image';
 
 interface ProfileSidebarProps {
   page: "gigspage" | "socialpage";
@@ -18,14 +19,14 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({ page }) => {
         {headingText}
         {!isGigPage && (
           <div className={styles.arrowIcon}>
-            <img src="/arrow-right.svg" alt="Arrow" />
+            <Image src="/arrow-right.svg" alt="Arrow" />
           </div>
         )}
       </h2>
 
       <div className={styles.profileCard}>
         <div className={styles.profileHeader}>
-          <img
+          <Image
             src="/assets/image-109.png"
             alt="Profile"
             className={styles.profileImage}
@@ -41,7 +42,7 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({ page }) => {
         <section className={styles.gigsSection}>
           <div className={styles.sectionHeader}>
             <div className={styles.sectionIcon}>
-              <img src="/lamp-on.svg" />
+              <Image src="/lamp-on.svg" alt="Lamp"/>
             </div>
             <h4 className={styles.sectionTitle}>Gigs I can help with</h4>
           </div>
@@ -56,7 +57,7 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({ page }) => {
         <section className={styles.peopleSection}>
           <div className={styles.sectionHeader}>
             <div className={styles.sectionIcon}>
-              <img src="/profile-2user.svg" />
+              <Image src="/profile-2user.svg" alt="Profile" />
             </div>
             <h4 className={styles.sectionTitleUnderlined}>
               3 People need your help
@@ -64,7 +65,7 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({ page }) => {
           </div>
           <div className={styles.peopleList}>
             <div className={styles.personItem}>
-              <img
+              <Image
                 src="/assets/image-123.png"
                 alt="Person"
                 className={styles.personImage}
@@ -79,7 +80,7 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({ page }) => {
               </div>
             </div>
             <div className={styles.personItem}>
-              <img
+              <Image
                 src="/assets/image-275.png"
                 alt="Person"
                 className={styles.personImage}
@@ -94,7 +95,7 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({ page }) => {
               </div>
             </div>
             <div className={styles.personItem}>
-              <img
+              <Image
                 src="/assets/image-568.png"
                 alt="Person"
                 className={styles.personImage}

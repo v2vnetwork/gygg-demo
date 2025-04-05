@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./AlbumSection.module.css";
 import AlbumCard from "./AlbumCard";
 import AddPhotoModal from "./AddPhotoModal"; // Import modal
+import Image from 'next/image';
 
 interface Album {
   image: string;
@@ -42,7 +43,7 @@ const AlbumSection: React.FC = () => {
         <h2>Album</h2>
         {albumData.length > 0 && (
           <button className={styles.addButton} onClick={handleAddClick}>
-            <img src="/add-circle.svg" alt="Add" className={styles.addIcon} />
+            <Image src="/add-circle.svg" alt="Add" className={styles.addIcon} />
           </button>
         )}
       </div>

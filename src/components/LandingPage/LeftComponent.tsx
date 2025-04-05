@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from './LeftComponent.module.css';
+import Image from 'next/image';
 
 const LeftComponent: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const LeftComponent: React.FC = () => {
       </h2>
       {/* Add Image Below the Text */}
       <div className={styles.imageContainer}>
-        <img src="/assets/people.png" alt="Image" className={styles.image} />
+        <Image src="/assets/people.png" alt="Image" className={styles.image} />
       </div>
     </div>
   );

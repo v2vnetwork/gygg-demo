@@ -5,6 +5,7 @@ import ProgressBar from "../../components/Provider/ProfileSetup3/ProgressBar";
 import NavigationButtons from "../../components/Provider/ProfileSetup3/NavigationButtons";
 import BioTextArea from "../../components/Provider/ProfileSetup3/BioTextArea";
 import FileUpload from "../../components/Provider/ProfileSetup3/FileUpload";
+import Image from 'next/image';
 
 const ProfileSetup3: React.FC = () => {
   return (

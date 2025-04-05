@@ -4,6 +4,7 @@ import styles from './profilesetup5.module.css';
 import ProgressHeader from '@/components/Tasker/ProfileSetup/ProgressHeader';
 import { InputField } from '@/components/Tasker/ProfileSetup/InputField';
 import { FaUpload } from 'react-icons/fa';
+import Image from 'next/image';
 
 const ProfileSetup5 = () => {
   const [step, setStep] = useState(5);

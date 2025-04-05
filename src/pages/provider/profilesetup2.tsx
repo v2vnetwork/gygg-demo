@@ -4,6 +4,7 @@ import styles from "./profilesetup2.module.css";
 import { ProgressBar } from "../../components/Provider/ProfileSetup2/ProgressBar";
 import { NavigationButtons } from "../../components/Provider/ProfileSetup2/NavigationButtons";
 import { PersonalityForm } from "../../components/Provider/ProfileSetup2/PersonalityForm";
+import Image from 'next/image';
 
 export const ProfileSetup2: React.FC = () => {
   const handleBack = () => {
@@ -21,7 +22,7 @@ export const ProfileSetup2: React.FC = () => {
         rel="stylesheet"
       />
       <div className={styles.container}>
-        <img
+        <Image
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed2ffb06294b1842ef39768c2189fe8393438629"
           alt="GYGG Logo"
           className={styles.logo}

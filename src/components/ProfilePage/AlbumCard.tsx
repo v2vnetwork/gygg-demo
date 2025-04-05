@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AlbumCard.module.css";
+import Image from 'next/image';
 
 interface AlbumCardProps {
   image: string;
@@ -9,7 +10,7 @@ interface AlbumCardProps {
 const AlbumCard: React.FC<AlbumCardProps> = ({ image, caption }) => {
   return (
     <figure className={styles.albumItem}>
-      <img src={image} alt={caption} className={styles.albumImage} />
+      <Image src={image} alt={caption} className={styles.albumImage} />
       <figcaption className={styles.albumCaption}>{caption}</figcaption>
     </figure>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Post.module.css";
+import Image from 'next/image';
 
 interface PostProps {
   profileImage: string;
@@ -26,7 +27,7 @@ const Post: React.FC<PostProps> = ({
     <article className={isSimple ? styles.postCard : styles.postCardWithImage}>
       <div className={styles.postHeader}>
         <div className={styles.userInfo}>
-          <img
+          <Image
             src={profileImage}
             alt={username}
             className={styles.profileImage}
@@ -37,7 +38,7 @@ const Post: React.FC<PostProps> = ({
           </div>
         </div>
         <div className={styles.moreIcon}>
-          <img src="/more.svg" />
+          <Image src="/more.svg" alt="more"/>
         </div>
       </div>
 
@@ -45,21 +46,21 @@ const Post: React.FC<PostProps> = ({
         <p className={styles.postContent}>{content}</p>
       ) : (
         <>
-          {image && <img src={image} alt="" className={styles.postImage} />}
+          {image && <Image src={image} alt="" className={styles.postImage} />}
           <div className={styles.commentSection}>
             <div className={styles.postActions}>
               <div className={styles.actionButtons}>
                 <div className={styles.actionButton}>
-                  <img src="/heart.svg" />
+                  <Image src="/heart.svg" alt="heart"/>
                   <span className={styles.actionCount}>{likes}</span>
                 </div>
                 <div className={styles.actionButton}>
-                  <img src="/comment.svg" />
+                  <Image src="/comment.svg" alt="actionButton"/>
                   <span className={styles.actionCount}>{comments}</span>
                 </div>
               </div>
               <div className={styles.bookmarkIcon}>
-                <img src="/bookmark.svg" />
+                <Image src="/bookmark.svg" alt="bookmark"/>
               </div>
             </div>
             <div className={styles.commentContent}>
@@ -78,16 +79,16 @@ const Post: React.FC<PostProps> = ({
         <div className={styles.postActions}>
           <div className={styles.actionButtons}>
             <div className={styles.actionButton}>
-              <img src="/heart.svg" />
+              <Image src="/heart.svg" alt="heart"/>
               <span className={styles.actionCount}>{likes}</span>
             </div>
             <div className={styles.actionButton}>
-              <img src="/comment.svg" />
+              <Image src="/comment.svg" alt="actionButton"/>
               <span className={styles.actionCount}>{comments}</span>
             </div>
           </div>
           <div className={styles.bookmarkIcon}>
-            <img src="/bookmark.svg" />
+            <Image src="/bookmark.svg" alt="bookmark"/>
           </div>
         </div>
       )}

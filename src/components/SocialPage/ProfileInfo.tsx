@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ProfileInfo.module.css";
+import Image from 'next/image';
 
 const ProfileInfo: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -48,7 +49,7 @@ const ProfileInfo: React.FC = () => {
   return (
     <section className={styles.profileCard}>
       <div className={styles.profileHeader}>
-        <img
+        <Image
           src="/edit.svg"
           alt="Edit"
           className={styles.editIcon}
@@ -57,7 +58,7 @@ const ProfileInfo: React.FC = () => {
       </div>
       <div className={styles.profileContent}>
         <div className={styles.profileImageContainer}>
-          <img
+          <Image
             src="/assets/image-109.png"
             alt="Profile"
             className={styles.profileImage}
@@ -69,7 +70,7 @@ const ProfileInfo: React.FC = () => {
             <h1 className={styles.profileName}>{name}</h1>
             <p className={styles.profileServices}>{services}</p>
             <div className={styles.profileLocation}>
-              <img src="/location.svg" alt="Location" className={styles.locationIcon} />
+              <Image src="/location.svg" alt="Location" className={styles.locationIcon} />
               <span>{location}</span>
             </div>
           </div>

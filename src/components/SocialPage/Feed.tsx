@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./Feed.module.css";
 import Post from "./Post";
 import Button from "../Shared/Button";
+import Image from 'next/image';
 
 const Feed: React.FC = () => {
   const [postText, setPostText] = useState(""); 
@@ -58,7 +59,7 @@ const Feed: React.FC = () => {
 
       <section className={styles.createPostCard}>
         <div className={styles.createPostHeader}>
-          <img src="/assets/image-109.png" alt="Profile" className={styles.profileImage} />
+          <Image src="/assets/image-109.png" alt="Profile" className={styles.profileImage} />
           <input
             type="text"
             className={styles.createPostInput}
@@ -69,9 +70,9 @@ const Feed: React.FC = () => {
         </div>
         <div className={styles.createPostActions}>
           <div className={styles.postIcons}>
-            <div className={styles.postIcon}><img src="/image.svg" alt="Image" /></div>
-            <div className={styles.postIcon}><img src="/gif.svg" alt="Gif" /></div>
-            <div className={styles.postIcon}><img src="/emoji.svg" alt="Emoji" /></div>
+            <div className={styles.postIcon}><Image src="/image.svg" alt="Image" /></div>
+            <div className={styles.postIcon}><Image src="/gif.svg" alt="Gif" /></div>
+            <div className={styles.postIcon}><Image src="/emoji.svg" alt="Emoji" /></div>
           </div>
           <Button className={styles.postButton} onClick={handlePostSubmit}>Post</Button>
         </div>

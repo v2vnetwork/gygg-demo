@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router"; // Import useRouter for navigation
 import styles from "./Sidebar.module.css";
+import Image from 'next/image';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -23,7 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
         className={`${styles.navItem} ${selectedItem === "home" ? styles.selected : ""}`}
         onClick={() => handleNavigation("socialpage")}
       >
-        <img
+        <Image
           className={selectedItem === "home" ? styles.selectedIcon : styles.defaultIcon}
           src="/home.svg"
           alt="Home"
@@ -35,7 +36,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
         className={`${styles.navItem} ${selectedItem === "messages" ? styles.selected : ""}`}
         onClick={() => handleNavigation("chatpage")}
       >
-        <img
+        <Image
           className={selectedItem === "messages" ? styles.selectedIcon : styles.defaultIcon}
           src="/messages.svg"
           alt="Messages"
@@ -47,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
         className={`${styles.navItem} ${selectedItem === "contracts" ? styles.selected : ""}`}
         onClick={() => handleNavigation("gigshistory")}
       >
-        <img
+        <Image
           className={selectedItem === "contracts" ? styles.selectedIcon : styles.defaultIcon}
           src="/clock.svg"
           alt="Task History"
@@ -59,7 +60,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
         className={`${styles.navItem} ${selectedItem === "gigs" ? styles.selected : ""}`}
         onClick={() => handleNavigation("gigspage")}
       >
-        <img
+        <Image
           className={selectedItem === "gigs" ? styles.selectedIcon : styles.defaultIcon}
           src="/briefcase.svg"
           alt="Gigs"

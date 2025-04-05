@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./signup.module.css";
+import Image from 'next/image';
 
 const SignUp: React.FC = () => {
   const router = useRouter();
@@ -25,7 +26,7 @@ const SignUp: React.FC = () => {
             className={`${styles.card} ${role === "tasker" ? styles.selected : ""}`} 
             onClick={() => setRole("tasker")}
           >
-            <img src="/assets/briefcase.svg" alt="Tasker" className={styles.cardLogo} />
+            <Image src="/assets/briefcase.svg" alt="Tasker" className={styles.cardLogo} />
             <h3 className={styles.cardTitle}>Tasker</h3>
             <p className={styles.cardDescription}>Some basic description about Tasker</p>
           </div>
@@ -33,7 +34,7 @@ const SignUp: React.FC = () => {
             className={`${styles.card} ${role === "provider" ? styles.selected : ""}`} 
             onClick={() => setRole("provider")}
           >
-            <img src="/assets/user.svg" alt="Provider" className={styles.cardLogo} />
+            <Image src="/assets/user.svg" alt="Provider" className={styles.cardLogo} />
             <h3 className={styles.cardTitle}>Provider</h3>
             <p className={styles.cardDescription}>Some basic description about provider</p>
           </div>

@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./ContractsList.module.css";
 import { ContractCard } from "./ContractCard";
+import Image from 'next/image';
 
 interface ContractCardProps {
   id: string;
@@ -107,13 +108,13 @@ export const ContractsList: React.FC = () => {
       <div className={styles.contractsContainer}>
         <div className={styles.iconContainer}>
           <div className={styles.iconWrapper}>
-            <img
+            <Image
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/03d835171130baae7e0c4ae2bea3dbf40c6fce9e"
               className={styles.icon}
               alt="Contracts Icon"
             />
           </div>
-          <img
+          <Image
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/f42e666922fd424586cc5a3ff6fc0dfdc0843948"
             className={styles.secondaryIcon}
             alt="Secondary Icon"

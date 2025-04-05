@@ -3,6 +3,7 @@ import * as React from "react";
 import styles from "./profilesetup.module.css";
 import { ProgressBar } from "../../components/Provider/ProfileSetup/ProgressBar";
 import { FormInput } from "../../components/Provider/ProfileSetup/FormInput";
+import Image from 'next/image';
 
 function ProfileSetup() {
   const handleSubmit = (e: React.FormEvent) => {
@@ -21,7 +22,7 @@ function ProfileSetup() {
         rel="stylesheet"
       />
       <main className={styles.mainContainer}>
-        <img
+        <Image
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed2ffb06294b1842ef39768c2189fe8393438629"
           alt="GYGG Logo"
           className={styles.logo}

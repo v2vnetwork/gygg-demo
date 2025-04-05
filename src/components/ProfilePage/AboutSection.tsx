@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./AboutSection.module.css";
+import Image from 'next/image';
 
 const AboutSection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,7 +39,7 @@ const AboutSection: React.FC = () => {
       <div className={styles.aboutHeader}>
         <h2>About Me</h2>
         {bio && ( // Show edit button only if bio exists
-          <img
+          <Image
             src="/edit.svg"
             alt="Edit"
             className={styles.editIcon}
@@ -71,7 +72,7 @@ const AboutSection: React.FC = () => {
               </button>
             </div>
             <p className={styles.modalPrompt}>
-              Use this space to show gig seekers you have the skills and experience they're looking for.
+              Use this space to show gig seekers you have the skills and experience they&aposre looking for.
             </p>
             <textarea
               className={styles.textArea}
