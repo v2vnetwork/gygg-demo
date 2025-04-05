@@ -62,7 +62,7 @@ const ProfileSetup2 = () => {
 
           <div className={styles.specificTasksContainer}>
             <label className={styles.specificTasksLabel}>Select the specific tasks you can help</label>
-            <div>Household Services</div>
+            <div className={styles.title}>Household Services</div>
             {specificTasks.map((task) => (
               <div key={task} className={styles.taskItem}>
                 <label>
