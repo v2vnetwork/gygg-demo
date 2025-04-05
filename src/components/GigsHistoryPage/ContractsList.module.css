@@ -1,0 +1,102 @@
+.contractsSection {
+    width: 54%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .searchPlaceholder {
+    background-color: #fff;
+    border: 1px solid #f6f2ed;
+    border-radius: 15px;
+    width: 522px;
+    max-width: 100%;
+    height: 54px;
+    margin-left: 19px;
+    align-self: center;
+  }
+  
+  .contractsHeader {
+    margin-top: 41px;
+    padding-left: 10px;
+  }
+  
+  .contractsNav {
+    display: flex;
+    gap: 37px;
+    color: #3d4d55;
+    font-size: 20px;
+  }
+  
+  .activeTab {
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .tab {
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .tabIndicator {
+    display: flex;
+    margin-top: 5px;
+  }
+  
+  .activeIndicator {
+    background-color: #00aaba;
+    width: 124px;
+    height: 5px;
+  }
+  
+  .inactiveIndicator {
+    border: 1px solid #d9d9d9;
+    flex: 1;
+    height: 5px;
+  }
+  
+  .contractsContainer {
+    background-color: #fff;
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 23px 24px 40px;
+  }
+  
+  .iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  
+  .iconWrapper {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+    padding: 5px 13px;
+  }
+  
+  .icon {
+    aspect-ratio: 1;
+    width: 32px;
+    object-fit: contain;
+  }
+  
+  .secondaryIcon {
+    aspect-ratio: 1;
+    width: 28px;
+    object-fit: contain;
+    margin: auto 0;
+  }
+  
+  @media (width <= 991px) {
+    .contractsSection {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  
+    .contractsContainer {
+      padding: 20px;
+    }
+  }
+  

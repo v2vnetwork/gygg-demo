@@ -1,0 +1,100 @@
+.sidebar {
+  background-color: #f1f1f1;
+  width: 270px;
+  height: 100vh;
+  padding-top: 84px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 80px; /* Collapsed width */
+}
+
+.navItem {
+  color: #3d4d55;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 24px;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  position: relative; /* Needed for bottom border */
+}
+
+/* Hover Effect */
+.navItem:hover {
+  background-color: rgba(0, 170, 186, 0.15); /* Light teal hover */
+}
+
+/* Bottom Border - Full Width when open */
+.navItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Align border to the left */
+  width: 100%; /* Full width */
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* Remove Bottom Border when collapsed */
+.sidebar.collapsed .navItem::after {
+  content: none; /* Remove the border when collapsed */
+}
+
+.sidebar.collapsed .navItem {
+  justify-content: center;
+  padding: 16px;
+}
+
+.navText {
+  font-size: 18px;
+  font-weight: 500;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar.collapsed .navText {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* Default Icon Color - Black */
+.defaultIcon {
+  filter: brightness(0); /* Keeps it black */
+}
+
+/* Selected Item Styles */
+.navItem.selected {
+  background-color: #00AABA;
+  color: white;
+}
+
+/* When Selected, Icons Turn White */
+.navItem.selected .selectedIcon {
+  filter: brightness(0) invert(1);
+}
+
+
+.sidebar.open {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    width: 200px;
+  }
+  .sidebar.collapsed {
+    width: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    width: 100%;
+  }  
+}

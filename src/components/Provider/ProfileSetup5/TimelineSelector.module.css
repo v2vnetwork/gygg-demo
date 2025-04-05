@@ -1,0 +1,53 @@
+.container {
+    margin-bottom: 30px;
+  }
+  
+  .label {
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+  }
+  
+  .options {
+    gap: 40px;
+    display: flex;
+  }
+  
+  @media (max-width: 640px) {
+    .options {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  .radioLabel {
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+  }
+  
+  .radioInput {
+    display: none;
+  }
+  
+  .radioControl {
+    background-color: #f9fafb;
+    border: 3.5px solid #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  
+  .radioInput:checked + .radioControl {
+    border-color: #00aaba;
+  }
+  
+  .radioText {
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+  }
+  

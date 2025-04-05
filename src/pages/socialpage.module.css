@@ -1,0 +1,88 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #f6f2ed;
+}
+
+.contentWrapper {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 280px;
+}
+
+/* Feed styles */
+.feed {
+  flex: 1;
+  padding: 24px;
+}
+
+.feedItem {
+  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+/* ProfileSidebar styles */
+.profileSidebar {
+  width: 288px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* Common component styles */
+.button {
+  color: #fff;
+  background-color: #00aaba;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.input {
+  color: #9f9fa0;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Utility classes */
+.flexRow {
+  display: flex;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap8 {
+  gap: 8px;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.fontBold {
+  font-weight: 700;
+}
+
+.textUnderline {
+  text-decoration: underline;
+}

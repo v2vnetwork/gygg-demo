@@ -1,0 +1,67 @@
+.pageContainer {
+    background-color: #f6f2ed;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    overflow: hidden;
+    font-family:
+      Inter,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .logoSection {
+    z-index: 10;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    max-width: 1174px;
+    margin-top: -75px;
+    padding-bottom: 19px;
+    display: flex;
+  }
+  
+  .mainLogo {
+    aspect-ratio: 2.44;
+    object-fit: contain;
+    object-position: center;
+    z-index: 10;
+    width: 164px;
+    max-width: 100%;
+  }
+  
+  .decorativeLogo {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    align-self: end;
+    width: 28px;
+    margin-top: -47px;
+  }
+  
+  .contentContainer {
+    width: 100%;
+    max-width: 1277px;
+  }
+  
+  .columnsWrapper {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (width <= 991px) {
+    .contentContainer {
+      max-width: 100%;
+    }
+  
+    .columnsWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  

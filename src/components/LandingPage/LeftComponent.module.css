@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
+.leftComponent {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F2ED;
+  position: relative;
+  height: 100vh;
+}
+
+.borderBox {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 8px solid #D99633;
+  pointer-events: none;
+}
+
+.leftComponentText {
+  font-size: 3.0rem;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  z-index: 1;
+}
+
+.text {
+  color: #38A1AC;
+  text-decoration: none;
+}
+
+/* New CSS for Image */
+.imageContainer {
+  margin-top: 2rem; /* Adds some space between text and image */
+}
+
+.image {
+  width: 100%; /* Adjust this based on how big you want the image */
+  max-width: 400px; /* Max size of the image */
+  object-fit: cover; /* Ensures the image fits within the container */
+  border-radius: 8px; /* Optional: rounded corners */
+}

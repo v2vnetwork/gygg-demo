@@ -1,0 +1,53 @@
+.container {
+    justify-content: space-between;
+    width: 740px;
+    margin: 30px auto;
+    padding: 0 26px;
+    display: flex;
+  }
+  
+  .backButton {
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .backText {
+    letter-spacing: 0.16px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .nextButton {
+    color: #fff;
+    letter-spacing: 0.16px;
+    cursor: pointer;
+    background-color: #d99633;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 44px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  @media (width <= 991px) {
+    .container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .nextButton {
+      padding: 8px 32px;
+    }
+  }
+  

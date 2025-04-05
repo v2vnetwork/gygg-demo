@@ -1,0 +1,80 @@
+.contractCard {
+    margin-top: 20px;
+  }
+  
+  .contractTitle {
+    color: #3d4d55;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 0 0 18px;
+  }
+  
+  .contractDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .contractInfo {
+    display: flex;
+    gap: 53px;
+    color: #3d4d55;
+  }
+  
+  .hiredBySection {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .hiredBy {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .label {
+    font-weight: 400;
+  }
+  
+  .value {
+    font-weight: 600;
+  }
+  
+  .contractId {
+    font-weight: 400;
+  }
+  
+  .financialInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-weight: 400;
+  }
+  
+  .highlight {
+    color: #d99633;
+    font-weight: 700;
+  }
+  
+  .statusSection {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-end;
+  }
+  
+  .startDate {
+    color: #3d4d55;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .divider {
+    border: 1px solid #d9d9d9;
+    margin: 16px 0;
+    width: 100%;
+  }
+  

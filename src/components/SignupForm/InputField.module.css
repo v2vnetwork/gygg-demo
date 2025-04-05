@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  appearance: none; /* Removes default number input arrows */
+  -moz-appearance: textfield; /* Firefox-specific fix */
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Removes number input spinners */
+}
+
+.togglePassword {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #d99633;
+}

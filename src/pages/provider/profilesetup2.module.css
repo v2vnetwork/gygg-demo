@@ -1,0 +1,46 @@
+.container {
+    background: linear-gradient(#3c4a53 0%, #0f212d 100%);
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 32px;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .logo {
+    width: 164px;
+    height: 67px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+  }
+  
+  @media (width <= 991px) {
+    .container {
+      max-width: 991px;
+      padding: 20px;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  

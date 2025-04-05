@@ -1,0 +1,47 @@
+.container {
+    width: 740px;
+    margin: 42px auto 0;
+  }
+  
+  .header {
+    color: #fff;
+    letter-spacing: 0.01em;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+  }
+  
+  .bar {
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+  }
+  
+  .fill {
+    background-color: #00aaba;
+    border-radius: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  @media (width <= 991px) {
+    .container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .header {
+      font-size: 20px;
+    }
+  }
+  

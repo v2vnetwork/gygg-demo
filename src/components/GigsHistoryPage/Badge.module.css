@@ -1,0 +1,27 @@
+.badge {
+    text-align: center;
+    border-radius: 6px;
+    min-height: 24px;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .active {
+    color: #03543f;
+    background-color: #def7ec;
+    border: 1px solid #03543f;
+  }
+  
+  .ended {
+    color: #111928;
+    background-color: #f3f4f6;
+    border: 1px solid #3d4d55;
+  }
+  
+  @media (width <= 991px) {
+    .badge {
+      white-space: initial;
+    }
+  }
+  

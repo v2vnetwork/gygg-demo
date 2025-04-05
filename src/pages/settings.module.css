@@ -1,0 +1,31 @@
+.container {
+    background-color: #f6f2ed;
+    min-height: 100vh;
+    font-family: Inter, sans-serif;
+    display: flex;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    margin-left: 270px;
+    padding: 104px 20px 20px;
+  }
+  
+  @media (width<=991px) {
+    .content {
+      margin-left: 200px;
+    }
+  }
+  
+  @media (width<=640px) {
+    .content {
+      margin-left: 0;
+    }
+  }
+  

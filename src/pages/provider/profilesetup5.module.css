@@ -1,0 +1,51 @@
+.mainContainer {
+    background: linear-gradient(#3c4a53 0%, #0f212d 100%);
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 32px;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 164px;
+    height: 67px;
+  }
+  
+  .formContainer {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 991px) {
+    .formContainer {
+      padding: 0 20px;
+    }
+  }
+  
+  .title {
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 640px) {
+    .title {
+      font-size: 24px;
+    }
+  }
+  

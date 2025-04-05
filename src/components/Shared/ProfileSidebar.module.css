@@ -1,0 +1,143 @@
+.profileSidebar {
+    width: 288px;
+    padding: 24px;
+  }
+
+  .profileTitleText {
+    color: #3d4d55;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-decoration-line: underline;
+    display: flex; /* Aligns items in one line */
+    align-items: center; /* Vertically centers text and arrow */
+    gap: 8px; /* Space between text and arrow */
+    margin-bottom: 20px;
+  }
+  
+  .arrowIcon {
+    display: flex; /* Ensures the SVG remains inline */
+    align-items: center; /* Centers the icon */
+    font-size: 10px;
+  }
+  
+  
+  .profileCard {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 24px;
+  }
+  
+  .profileHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .profileImage {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  
+  .profileName {
+    color: #3d4d55;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .viewProfileLink {
+    color: #3d4d55;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    display: inline-block;
+  }
+  
+  .gigsSection {
+    margin-top: 24px;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .sectionIcon {
+    display: flex;
+  }
+  
+  .sectionTitle {
+    color: #3d4d55;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .sectionTitleUnderlined {
+    color: #3d4d55;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    margin: 0;
+  }
+  
+  .gigTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .gigTag {
+    color: #fff;
+    background-color: #d99633;
+    border: 2px solid #b08461;
+    border-radius: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .peopleSection {
+    margin-top: 24px;
+  }
+  
+  .peopleList {
+    margin-top: 16px;
+  }
+  
+  .personItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .personItem:last-child {
+    margin-bottom: 0;
+  }
+  
+  .personImage {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+  }
+  
+  .personDescription {
+    color: #536471;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .viewGigLink {
+    color: #3d4d55;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    display: inline-block;
+  }
+  

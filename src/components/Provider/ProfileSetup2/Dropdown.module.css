@@ -1,0 +1,38 @@
+.container {
+    margin-bottom: 24px;
+  }
+  
+  .label {
+    color: #fff;
+    margin-bottom: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+  }
+  
+  .dropdownButton {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 14px;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .dropdownButton svg {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @media (width <= 640px) {
+    .label {
+      font-size: 14px;
+    }
+  }
+  

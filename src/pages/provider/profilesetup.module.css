@@ -1,0 +1,171 @@
+.mainContainer {
+    background: linear-gradient(#3c4a53 0%, #0f212d 100%);
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 32px;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .logo {
+    width: 164px;
+    height: 67px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+  }
+  
+  .progressContainer {
+    width: 740px;
+    position: absolute;
+    top: 42px;
+    left: 350px;
+  }
+  
+  .backButton {
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    position: absolute;
+    top: 142px;
+    left: 350px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .backButtonText {
+    color: #fff;
+    letter-spacing: 0.16px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+  
+  .formContainer {
+    max-width: 520px;
+    margin: 186px auto 0;
+    position: relative;
+  }
+  
+  .formContent {
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+  }
+  
+  .formTitle {
+    color: #fff;
+    letter-spacing: 0.32px;
+    margin-bottom: 14px;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  .formDescription {
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 64px;
+    display: grid;
+  }
+  
+  .nextButton {
+    color: #fff;
+    letter-spacing: 0.16px;
+    cursor: pointer;
+    background-color: #d99633;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 44px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    position: absolute;
+    top: -56px;
+    right: -15px;
+  }
+  
+  @media (width <= 991px) {
+    .mainContainer {
+      max-width: 991px;
+      padding: 20px;
+    }
+  
+    .progressContainer {
+      width: calc(100% - 40px);
+      top: 100px;
+      left: 20px;
+    }
+  
+    .backButton {
+      top: 180px;
+      left: 20px;
+    }
+  
+    .formContainer {
+      margin-top: 220px;
+    }
+  
+    .nextButton {
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .mainContainer {
+      max-width: 640px;
+    }
+  
+    .logo {
+      margin: 0 auto 20px;
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+  
+    .formContainer {
+      padding: 0 20px;
+    }
+  
+    .formContent {
+      gap: 20px;
+    }
+  
+    .formTitle {
+      font-size: 24px;
+    }
+  
+    .formDescription {
+      font-size: 14px;
+    }
+  
+    .formGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

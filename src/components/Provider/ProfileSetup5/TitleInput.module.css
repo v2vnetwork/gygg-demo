@@ -1,0 +1,45 @@
+.container {
+    margin-bottom: 30px;
+  }
+  
+  .label {
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+  }
+  
+  .input {
+    color: #3d4d55;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    padding: 20px 14px;
+    font-family: Outfit, sans-serif;
+    font-size: 16px;
+  }
+  
+  .examplesTitle {
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .examplesList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .example {
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  

@@ -1,0 +1,58 @@
+.navigation {
+    width: 22%;
+    color: #3d4d55;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 84px;
+    padding-bottom: 723px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: inherit;
+    padding: 21px 57px;
+  }
+  
+  .divider {
+    border: 1px solid #d9d9d9;
+    margin: 0;
+    height: 1px;
+  }
+  
+  .activeSection {
+    color: #fff;
+    background-color: #00aaba;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 1px;
+    padding-bottom: 25px;
+    font-weight: 700;
+    display: flex;
+  }
+  
+  .activeSection .navLink {
+    margin-left: 52px;
+  }
+  
+  @media (width <= 991px) {
+    .navigation {
+      width: 100%;
+      margin-top: 40px;
+      padding-bottom: 100px;
+    }
+  
+    .navLink {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .activeSection .navLink {
+      margin-left: 10px;
+    }
+  }
+  

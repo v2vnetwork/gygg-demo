@@ -1,0 +1,33 @@
+.navigation {
+    justify-content: space-between;
+    max-width: 740px;
+    margin: 0 auto 40px;
+    display: flex;
+  }
+  
+  .backButton {
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    border: none;
+    align-items: center;
+    gap: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    padding: 0;
+  }
+  
+  .doneButton {
+    color: #fff;
+    cursor: pointer;
+    background-color: #d99633;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 44px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  

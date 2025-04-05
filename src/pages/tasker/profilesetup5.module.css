@@ -1,0 +1,133 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e293b;
+  color: white;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  max-width: 42rem;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.inputLabel {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  font-size: 1.1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #d97706;
+  box-shadow: 0 0 0 0.25rem rgba(255, 170, 0, 0.25);
+}
+
+.imageSection {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.imagePreview {
+  width: 45%;
+  height: 250px;
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  overflow: hidden;
+  position: relative;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.imageUpload {
+  width: 45%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  border: 2px dashed #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.imageUpload:hover {
+  background-color: #e5e7eb;
+}
+
+.uploadIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+}
+
+.uploadText{
+  color: #6b7280;
+}
+
+.fileInput {
+  display: none;
+}

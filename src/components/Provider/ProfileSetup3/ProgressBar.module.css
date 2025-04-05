@@ -1,0 +1,38 @@
+.progressContainer {
+    max-width: 740px;
+    margin: 0 auto 40px;
+  }
+  
+  .progressHeader {
+    color: #fff;
+    letter-spacing: 0.01em;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+  }
+  
+  .progressBar {
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+  }
+  
+  .progressFill {
+    background-color: #00aaba;
+    border-radius: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  @media (width <= 640px) {
+    .progressHeader {
+      font-size: 20px;
+    }
+  }
+  

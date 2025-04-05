@@ -1,0 +1,17 @@
+.mainContainer {
+    background-color: #f6f2ed;
+    min-height: 100vh;
+    display: flex;
+  }
+
+  
+  .contentLayout {
+    margin-top: 100px;
+    margin-left: 280px;
+    display: flex;
+  }
+
+  .taskList{
+    margin-top: 60px;
+  }
+  

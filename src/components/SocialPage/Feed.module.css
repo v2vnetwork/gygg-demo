@@ -1,0 +1,99 @@
+.feedContainer {
+  flex: 1;
+  padding: 24px;
+}
+
+.feedHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedTitle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.activeFilterButton {
+  color: #fff;
+  background-color: #3d4d55;
+  border-radius: 16px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.filterButton {
+  color: #3d4d55;
+  border: 1px solid #3d4d55;
+  border-radius: 16px;
+  padding: 8px 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.createPostCard {
+  background-color: #fff;
+  border-radius: 16px;
+  margin-top: 24px;
+  padding: 16px;
+}
+
+.createPostHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.createPostInput {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.createPostActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.postIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.postIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.postButton {
+  color: #fff;
+  background-color: #3d4d55;
+  border-radius: 16px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.postsContainer {
+  margin-top: 24px;
+}
