@@ -26,7 +26,7 @@ const SignUp: React.FC = () => {
             className={`${styles.card} ${role === "tasker" ? styles.selected : ""}`} 
             onClick={() => setRole("tasker")}
           >
-            <Image src="/assets/briefcase.svg" alt="Tasker" className={styles.cardLogo} />
+            <Image src="/assets/briefcase.svg" alt="Tasker" className={styles.cardLogo}  height={64} width={64} />
             <h3 className={styles.cardTitle}>Tasker</h3>
             <p className={styles.cardDescription}>Some basic description about Tasker</p>
           </div>
@@ -34,7 +34,7 @@ const SignUp: React.FC = () => {
             className={`${styles.card} ${role === "provider" ? styles.selected : ""}`} 
             onClick={() => setRole("provider")}
           >
-            <Image src="/assets/user.svg" alt="Provider" className={styles.cardLogo} />
+            <Image src="/assets/user.svg" alt="Provider" className={styles.cardLogo} height={64} width={64}/>
             <h3 className={styles.cardTitle}>Provider</h3>
             <p className={styles.cardDescription}>Some basic description about provider</p>
           </div>

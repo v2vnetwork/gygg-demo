@@ -13,7 +13,7 @@ const LeftComponent: React.FC = () => {
       </h2>
       {/* Add Image Below the Text */}
       <div className={styles.imageContainer}>
-        <Image src="/assets/people.png" alt="Image" className={styles.image} />
+        <Image src="/assets/people.png" alt="Image" className={styles.image} fill/>
       </div>
     </div>
   );
