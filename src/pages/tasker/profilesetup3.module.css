@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -7,18 +9,21 @@
   margin: -8px;
   background: linear-gradient(#3c4a53, #0f212d);
   padding: 2rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .formContainer {
   display: flex;
   justify-content: center;
   width: 100%;
+  font-family: 'Inter', sans-serif;
 }
 
 .form {
   max-width: 42rem;
   width: 100%;
   padding: 2.5rem;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Title and Subtitle */
@@ -27,12 +32,14 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #d1d5db;
+  font-family: 'Inter', sans-serif;
 }
 
 .subtitle {
   font-size: 1.2rem;
   color: #d1d5db;
   margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Form Fields */
@@ -41,12 +48,14 @@
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .inputLabel {
   font-size: 1.1rem;
   font-weight: 500;
   color: #d1d5db;
+  font-family: 'Inter', sans-serif;
 }
 
 .input {
@@ -57,6 +66,7 @@
   border: 1px solid #e5e7eb;
   font-size: 1.1rem;
   color: black;
+  font-family: 'Inter', sans-serif;
 }
 
 .input:focus {
@@ -69,6 +79,7 @@
 .dropdownWrapper {
   position: relative;
   width: 100%;
+  font-family: 'Inter', sans-serif;
 }
 
 .tagsInput {
@@ -80,6 +91,7 @@
   background-color: white;
   gap: 0.5rem;
   min-height: 46px;
+  font-family: 'Inter', sans-serif;
 }
 
 .tag {
@@ -91,6 +103,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  font-family: 'Inter', sans-serif;
 }
 
 .remove {
@@ -98,6 +111,7 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 1rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .searchInput {
@@ -108,6 +122,7 @@
   outline: none;
   background-color: transparent;
   color: black;
+  font-family: 'Inter', sans-serif;
 }
 
 .dropdownList {
@@ -123,12 +138,14 @@
   max-height: 150px;
   overflow-y: auto;
   margin-top: 4px;
+  font-family: 'Inter', sans-serif;
 }
 
 .dropdownItem {
   cursor: pointer;
   transition: background 0.2s;
   color: black;
+  font-family: 'Inter', sans-serif;
 }
 
 .dropdownItem:hover {

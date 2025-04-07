@@ -1,101 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: -8px;
-    background: linear-gradient(#3c4a53, #0f212d);
-    padding: 2rem;
-  }
-  
-  .formContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: transparent;
-  }
-  
-  .form {
-    max-width: 42rem;
-    width: 100%;
-    padding: 2.5rem;
-    border-radius: 1rem;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #d1d5db;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    color: #d1d5db;
-    margin-bottom: 2rem;
-  }
-  
-  .inputField {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .inputLabel {
-    font-size: 1.1rem;
-    font-weight: 500;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    background-color: white;
-    border: 1px solid #e5e7eb;
-    font-size: 1.1rem;
-  }
-  
-  .input:focus {
-    outline: none;
-    border-color: #d97706;
-    box-shadow: 0 0 0 0.25rem rgba(255, 170, 0, 0.25);
-  }
-  
-  .specificTasksContainer {
-    margin-top: 2rem;
-  }
-  
-  .specificTasksLabel {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: white;
-    display: block;
-    margin-bottom: 1rem;
-  }
-  
-  .taskItem {
-    margin-bottom: 0.5rem;
-  }
-  
-  .taskItem label {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
-  .taskItem input[type="checkbox"] {
-    margin-right: 0.5rem;
-  }
-  
-  .inputField select {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    background-color: white;
-    border: 1px solid #e5e7eb;
-    font-size: 1.1rem;
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: -8px;
+  background: linear-gradient(#3c4a53, #0f212d);
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+.form {
+  max-width: 42rem;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #d1d5db;
+  font-family: 'Inter', sans-serif;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.inputLabel {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #d97706;
+  box-shadow: 0 0 0 0.25rem rgba(255, 170, 0, 0.25);
+}
+
+.inputField select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.specificTasksContainer {
+  margin-top: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.specificTasksLabel {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.taskItem {
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.taskItem label {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.taskItem input[type="checkbox"] {
+  margin-right: 0.5rem;
+}

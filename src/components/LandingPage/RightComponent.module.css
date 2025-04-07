@@ -20,12 +20,11 @@
 
 .cardTitle {
   font-family: 'Inter', sans-serif;
-  font-weight: 900;
+  font-weight: bolder;
   font-size: 3rem;
   color: #D89362;
   padding-bottom: 1rem;
   text-decoration: none;
-  font-weight: bold; /* Make text bold */
 }
 
 .signupButton,
@@ -69,6 +68,7 @@
 
 .termsText {
   font-size: 0.8rem;
+  font-family: 'Inter', sans-serif;
   color: #666;
   margin-left: 20%;
   margin-right: 20%;
@@ -81,6 +81,7 @@
   text-decoration: underline;
   transition: color 0.3s ease; /* Add smooth transition */
   font-weight: bold; /* Make text bold */
+  font-family: 'Inter', sans-serif;
 }
 
 .link:hover {
